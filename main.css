@@ -44,6 +44,7 @@ padding-left:2rem;
 .DisplayText{
 text-align:center;
 padding-top:10rem;
+font-size:20px;
 
 }
 .MyName{
@@ -98,13 +99,15 @@ padding-bottom:20px;
 .projects{
   font-weight: bold;
   text-align:center;
+
   color:white;
   padding-bottom:10px;
-  font-size:15px;
+  font-size:20px;
 }
 
-
-
+.projects a{
+  font-size:20px;
+}
 
 @media only screen and (max-width: 700px) {
   #AboutMePara{
@@ -112,9 +115,24 @@ padding-bottom:20px;
     font-size:14px;
 }
 .projects{
-  font-size:15px;
+    text-align:center;
+  font-size:10px;
+}
+.projects a{
+  font-size:10px;
 }
 
+.MyName{
+  margin-top:-90px;
+}
+.DisplayText{
+
+font-size:15px;
+
+}
+.MyWork{
+  height:30rem;
+}
 }
 /* ----------- iPad Pro ----------- */
 @media only screen
