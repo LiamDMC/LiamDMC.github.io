@@ -397,6 +397,15 @@ margin-left:10%;
   body{
     background-color:red;
   }
+  #menu1{
+    margin-left:200px;
+    text-align:center;
+
+
+  }
+  #menu2{
+    margin-left:250px;
+  }
 }
 /*MEDIA QUERIES*/
 @media (min-width: 992px) and (max-width: 1300px) {
