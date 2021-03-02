@@ -1,0 +1,131 @@
+/*Body */
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Titillium Web', cursive; */
+
+
+
+}
+
+/*Nav*/
+a{
+  font-size:2rem;
+  text-align:center;
+  color:white;
+}
+#AboutMeLink{
+padding-left:3rem;
+}
+#ExampleWork{
+padding-left:2rem;
+}
+
+/*Top*/
+.Namesss{
+   font-weight: bold;
+  text-align:center;
+  height:35rem;
+  color: white;
+  background-image:url("Images/Birmingham.jpg");
+  background-size: cover;
+}
+.hidden{
+  display:none;
+}
+.colorop{
+  background-color: rgba(0, 0, 0, 0.7);
+  height:35rem;
+}
+.DisplayText{
+text-align:center;
+padding-top:10rem;
+
+}
+.MyName{
+
+  font-size:6rem;
+}
+
+.AboutMe{
+  height:20rem;
+
+}
+.MyWork{
+  width:100%;
+  height:25rem;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.btn1{
+  color:white;
+}
+
+#WorkTitle{
+  font-size:50px;
+  color:white;
+padding-top:20px;
+padding-bottom:20px;
+  text-align:center;
+  font-style:italic;
+   font-weight: bold;
+}
+
+#AboutMeTitle{
+  font-size:50px;
+  margin-top:20px;
+  text-align:center;
+  font-style:italic;
+ font-weight: bold;
+}
+
+#AboutMePara{
+  margin-top:30px;
+  text-align:center;
+  font-size:20px;
+
+
+}
+
+#app{
+  padding-bottom:10px;
+}
+
+.projects{
+  font-weight: bold;
+  text-align:center;
+  margin-left:-50px;
+  color:white;
+  padding-bottom:10px;
+  font-size:20px;
+}
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+  #AboutMePara{
+    text-align:center;
+    font-size:14px;
+}
+.projects{
+  font-size:15px;
+}
+
+}
+/* ----------- iPad Pro ----------- */
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .MyWork{
+      width:100%;
+      height:35rem;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+}
