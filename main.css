@@ -118,7 +118,7 @@ padding-bottom:20px;
 }
 .projects{
     text-align:center;
-  font-size:10px;
+  font-size:14px;
 }
 .projects a{
   font-size:10px;
@@ -126,6 +126,7 @@ padding-bottom:20px;
 
 .MyName{
   margin-top:-90px;
+  font-size:4rem;
 }
 .DisplayText{
 
@@ -135,7 +136,15 @@ font-size:15px;
 .MyWork{
   height:30rem;
 }
+#AboutMeTitle{
+  font-size:40px;
 }
+#WorktTitle{
+  font-size:40px;
+}
+}
+
+
 /* ----------- iPad Pro ----------- */
 @media only screen
   and (min-width: 1024px)
