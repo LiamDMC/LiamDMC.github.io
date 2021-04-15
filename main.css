@@ -6,7 +6,7 @@ html,body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    font-family: 'Titillium Web', cursive; */
+  font-family: "eurostile", sans-serif;
 
 
 
@@ -27,16 +27,15 @@ padding-left:2rem;
 
 /*Top*/
 .Namesss{
-   font-weight: bold;
+
+color:#141c3a;
   text-align:center;
   height:35rem;
   color: white;
   background-image:url("Images/Birmingham.jpg");
   background-size: cover;
 }
-.hidden{
-  display:none;
-}
+
 .colorop{
   background-color: rgba(0, 0, 0, 0.7);
   height:35rem;
@@ -48,27 +47,89 @@ font-size:20px;
 
 }
 .MyName{
+  font-variant-caps: small-caps;
 
-  font-size:6rem;
+   font-weight: bold;
+  font-size:5rem;
 }
 
 .AboutMe{
   height:20rem;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-.MyWork{
-  width:100%;
-  height:25rem;
-  background-color: #1e1e1e;
+  background-color:#4C516D;
+  border-bottom-style:solid;
+  border-bottom-width:2px;
+  border-bottom-color:#cfd4df;
+  border-top-style:solid;
+  border-top-width:2px;
+  border-top-color:#cfd4df;
+
 }
 
+#MyWorkContainer{
+  background-color:white;
+  height:60rem;
+}
+
+section{
+  text-align:center;
+}
+
+/*OVERLAY FOR WORK*/
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4C516D;
+
+margin-left:69px;
+}
+
+.VisitOverlay:hover .overlay {
+  opacity: 1;
+}
+
+.VisitOverlay{
+  margin-bottom:50px;
+}
+
+.text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.VisitButton{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+/*----------------------------------------------------------------*/
 .btn1{
   color:white;
 }
 
 #WorkTitle{
+  font-variant-caps: small-caps;
   font-size:50px;
-  color:white;
+  color:#4C516D;
 padding-top:20px;
 padding-bottom:20px;
   text-align:center;
@@ -77,19 +138,23 @@ padding-bottom:20px;
 }
 
 #AboutMeTitle{
+  color:white;
+  font-variant-caps: small-caps;
   font-size:50px;
   margin-top:20px;
+
   text-align:center;
   font-style:italic;
  font-weight: bold;
 }
 
 #AboutMePara{
+  color:white;
   margin-top:30px;
   text-align:center;
   font-size:20px;
-  margin-left:20px;
-  margin-right:20px;
+  margin-left:200px;
+  margin-right:200px;
 
 
 }
@@ -98,24 +163,24 @@ padding-bottom:20px;
   padding-bottom:10px;
 }
 
-.projects{
-  font-weight: bold;
-  text-align:center;
 
-  color:white;
-  padding-bottom:10px;
-  font-size:21px;
-}
 
-.projects a{
-  font-size:21px;
-}
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
   #AboutMePara{
     text-align:center;
     font-size:14px;
+    margin-left:0px;
+    margin-right:0px;
 }
+
+
+
+#MyWorkContainer{
+width:80%;
+height:50rem;
+
+}
+
 .projects{
     text-align:center;
   font-size:14px;
@@ -139,8 +204,84 @@ font-size:15px;
 #AboutMeTitle{
   font-size:40px;
 }
-#WorktTitle{
+#WorkTitle{
   font-size:40px;
+}
+
+#WorkImages img{
+  width:200px;
+  height:100px;
+}
+
+.overlay {
+  position: absolute;
+  margin:auto;
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  right: 0%;
+  height: 100px;
+  width: 220px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4C516D;
+  float:left;
+
+}
+
+.text {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.VisitButton{
+  font-size:10px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+}
+
+/* Medium devices (landscape tablets,and desktops 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  #AboutMePara{
+    text-align:center;
+
+    margin-left:0px;
+    margin-right:0px;
+}
+
+#WorkImages img{
+  width:300px;
+  height:200px;
+}
+
+.overlay {
+  position: absolute;
+  margin:auto;
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  right: 0%;
+  height: 200px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4C516D;
+  float:left;
+
 }
 }
 
